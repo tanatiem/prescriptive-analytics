@@ -4,7 +4,7 @@ An attempt to use Python to imitate the optimization problems solved by using Ex
 
 | Week | Description | Notebook |
 |---|---|---|
-| 1 | Linear Programming | [Product Mix](01%20Product%20Mix.ipynb") |
+| 1 | Linear Programming | [Product Mix](./01%20Product%20Mix.ipynb) |
 | 2 | | |
 | 3 | | |
 | 4 | | |
