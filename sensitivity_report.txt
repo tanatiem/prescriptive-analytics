@@ -1,0 +1,39 @@
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    
+Objective:  OBJ = 199600 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 Demand_constraints_1
+                    BS     560.00000      40.00000          -Inf         .          -80.00000  154800.00000 Labor_constraints_1
+                                            .          600.00000     2000.00000      27.50000  215000.00000 Demand_constraints_2
+
+     2 Demand_constraints_2
+                    NU    1200.00000        .               -Inf     1166.66667     -33.00000  198500.00000 Demand_constraints_1
+                                          33.00000    1200.00000     1250.00000          +Inf  201250.00000 Labor_constraints_2
+
+     3 Labor_constraints_1
+                    NU   10000.00000        .               -Inf     7200.00000     -16.00000  154800.00000 X_Basic
+                                          16.00000   10000.00000    10200.00000          +Inf  202800.00000 Demand_constraints_1
+
+     4 Labor_constraints_2
+                    BS    2960.00000      40.00000          -Inf     2933.33333     -41.25000   77500.00000 Demand_constraints_2
+                                            .         3000.00000     2960.00000          +Inf          +Inf
+
+GLPK 4.65 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    
+Objective:  OBJ = 199600 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 X_Basic      BS     560.00000      80.00000        .                -Inf        .       154800.00000 Labor_constraints_1
+                                            .               +Inf      600.00000     107.50000  215000.00000 Demand_constraints_2
+
+     2 X_XP         BS    1200.00000     129.00000        .          1166.66667      96.00000  160000.00000 Demand_constraints_2
+                                            .               +Inf     1200.00000          +Inf          +Inf
+
+End of report
